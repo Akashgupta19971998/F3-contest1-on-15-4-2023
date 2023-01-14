@@ -6,7 +6,7 @@ const tbody = document.getElementById("tbody");
 const button = document.getElementById('button')
 
 const arr = [];
-let num = 0;
+let num = 1;
 
 button.addEventListener("click", success)
 
@@ -35,10 +35,11 @@ function renderData() {
     arr.forEach((e) => {
         const row = `
       <tr>
+        <td>${e.num}<td>
         <td>${e.name}</td>
         <td>${e.profession}</td>
         <td>${e.age}</td>
-        <td><td>
+        <td><button>Delete user</button><td>
       </tr>
     `;
 
