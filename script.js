@@ -3,15 +3,15 @@ const profession = document.getElementById("profession");
 const age = document.getElementById("age");
 const message = document.getElementById("message");
 const tbody = document.getElementById("tbody");
-const button = document.getElementById('button')
+const btn11 = document.getElementById('button1')
 
 const arr = [];
 let num = 1;
 
-button.addEventListener("click", success)
+btn11.addEventListener("click", success);
 
 function success() {
-    alert("hello")
+    // alert("hello")
     if (!(fname.value && profession.value && age.value)) {
         message.innerText = "Error";
         message.style.display = "block";
@@ -39,10 +39,14 @@ function renderData() {
         <td>${e.name}</td>
         <td>${e.profession}</td>
         <td>${e.age}</td>
-        <td><button>Delete user</button><td>
+        <td><button onclick="Delete_user('${e.num}')">${Delete_user}</button><td>
       </tr>
     `;
 
         tbody.appendChild(row);
     });
+}
+
+function Delete_user(i){
+
 }
