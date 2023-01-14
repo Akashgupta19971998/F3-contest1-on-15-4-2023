@@ -11,7 +11,6 @@ let num = 1;
 btn11.addEventListener("click", success);
 
 function success() {
-    // alert("hello")
     if (!(fname.value && profession.value && age.value)) {
         message.innerText = "Error";
         message.style.display = "block";
