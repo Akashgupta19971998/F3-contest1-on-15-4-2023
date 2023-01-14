@@ -1,0 +1,44 @@
+
+.inputs{
+    display: flex;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 5px;
+}
+.button{
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer
+}
+.btn1{
+    background-color: white;
+}
+#message {
+    display: none;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  table tr{
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
