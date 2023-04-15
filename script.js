@@ -40,16 +40,15 @@ function success() {
 function renderData() {
     arr.forEach((e) => {
         const row = `
-        <tbody>
       <tr>
         <td>${"Id: " + e.num}<td>
         <td>${"Name: " + e.fname}</td>
         <td>${"Profession: " + e.profession}</td>
         <td>${"Age: " + e.age}</td>
-     <td><button onclick="Delete_user('${e.num}')">${Delete_user}</button></td>
+        <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction()"></td>
       </tr>
-      </tbody>
     `;
+    // <td><button onclick="Delete_user('${e.num}')">${Delete_user}</button></td>
          tableBody.appendChild(row);
         // table.appendChild(row);
         console.log("row>> " + row)
@@ -61,7 +60,7 @@ var tableRows = arr.map(function (person) {
     return "<tr><td> "+num+" </td><td>" + person.name + "</td><td>" + person.age + "</td><td>" + person.city + "</td></tr>";
 });
 
- tableBody.innerText = tableRows.join("");
+ tableBody.innerHTML= tableRows.join("");
 
 
 function Delete_user(i) {
