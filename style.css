@@ -31,6 +31,10 @@
     border: 1px solid white;
     border-collapse: collapse;
   }
+
+  #zero, #one, #two{
+    margin: 1rem;
+  }
 /* Chrome, Safari, Edge, Opera */
 /* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
