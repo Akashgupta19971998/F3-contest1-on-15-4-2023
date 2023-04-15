@@ -63,6 +63,7 @@ var tableRows = arr.map(function (person) {
  tableBody.innerHTML= tableRows.join("");
 
 
-function Delete_user(i) {
+function SomeDeleteRowFunction(){
+tableBody.remove()
 
 }
